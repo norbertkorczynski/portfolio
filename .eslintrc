@@ -1,4 +1,10 @@
 {
   "root": true,
-  "extends": "@upstatement/eslint-config/react"
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020 // or higher
+  }
 }
