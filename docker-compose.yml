@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  dependencies:
+    build:
+      context: .
+      target: dependencies
+    image: portfolio:dependencies
+    # This service can be used to install dependencies only,
+    # and you might run it as needed.
+
+  dev:
+    build:
+      context: .
+      target: development
+    image: portfolio:dev
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=development
+    container_name: portfolio_dev
+
+  web:
+    build:
+      context: .
+      target: production
+    image: portfolio:prod
+    ports:
+      - "8080:80"
+    container_name: portfolio_web
+
+  builder:
+    build:
+      context: .
+      target: builder
+    image: portfolio:builder
+    # Optionally, you might want to run this service only when needed,
+    # or keep it as a separate command for one-time builds
