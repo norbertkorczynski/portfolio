@@ -54,25 +54,9 @@ FROM docker.io/library/nginx:1.27.2-alpine3.20-slim AS production
 
 # Set the path to the public directory where static files will be served from
 ENV PUBLIC_PATH=/usr/share/nginx/html
-#ENV HTTP_PORT=8080
 
 # Copy the build output from the builder stage to the path specified in PUBLIC_PATH
 COPY --from=builder /app/public "${PUBLIC_PATH}"
 
-
-# COPY nginx-boot.sh /sbin/nginx-boot
-
-# # Create necessary directories and set permissions
-# RUN mkdir -p /var/cache/nginx /run/nginx \
-#   && chown -R nginx:nginx /var/cache/nginx /run/nginx /usr/share/nginx/html /sbin/nginx-boot \
-#   && chmod +x /sbin/nginx-boot
-
-# # Switch to non-privileged user
-# USER nginx
-
 # Set up volume for static files
 VOLUME ["${PUBLIC_PATH}"]
-
-# # Start Nginx
-# CMD [ "/sbin/nginx-boot" ]
-# EXPOSE "${HTTP_PORT}"
