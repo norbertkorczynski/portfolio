@@ -125,8 +125,8 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
-
+  const skills = ['C', 'C++', 'Python', 'MATLAB', 'Simulink', 'TargetLink', 'CANoe', 'Autosar Classic', 'Docker', 'Python', 'Langchain', 'Git', 'Rhapsody'];
+  
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="numbered-heading">About Me</h2>
@@ -135,30 +135,26 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! I am a highly motivated and ambitious individual with a lifelong passion
+              for software programming. My journey in software development
+              began with a fascination for coding, which has evolved into a passion for
+              creating robust solutions. Currently, I am focused on enhancing my skills in
+              artificial intelligence, Python, and modern C++, allowing me to adapt effectively
+              to evolving work guidelines and procedures.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Over the course of my career, I’ve had the privilege of contributing to impactful projects at 
+              <a href="https://www.globallogic.com/">GlobalLogic</a>, a leading technology services provider. 
+              My work has primarily focused on the <a href="https://www.globallogic.com/industries/automotive/">automotive</a> sector, 
+              where I have played a key role in the development of advanced Battery Management Systems (BMS) for electromobility solutions, 
+              with a particular emphasis on high-voltage applications.
             </p>
-
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              My recent work includes the development of a cutting-edge Generative AI LLM Assistant, leveraging microservice architecture, 
+              and advancing Battery Management Systems (BMS) for electromobility solutions. 
+              Currently, my focus is on crafting optimized, scalable software solutions using modern C++ and Python, 
+              while driving innovation in AI and containerized environments to deliver secure, efficient digital systems.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
