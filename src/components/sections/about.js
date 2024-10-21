@@ -144,9 +144,9 @@ const About = () => {
             </p>
 
             <p>
-              Over the course of my career, I’ve had the privilege of contributing to impactful projects at 
+              Over the course of my career, I’ve had the privilege of contributing to impactful projects at  
               <a href="https://www.globallogic.com/">GlobalLogic</a>, a leading technology services provider. 
-              My work has primarily focused on the <a href="https://www.globallogic.com/industries/automotive/">automotive</a> sector, 
+              My work has primarily focused on the <a href="https://www.globallogic.com/services/industries/industry-automotive/">automotive</a> sector, 
               where I have played a key role in the development of advanced Battery Management Systems (BMS) for electromobility solutions, 
               with a particular emphasis on high-voltage applications.
             </p>

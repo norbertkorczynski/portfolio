@@ -60,12 +60,13 @@ const Hero = () => {
   }, []);
 
   const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Norbert Korczynski.</h2>;
+  const two = <h2 className="big-heading">Norbert Korczynski</h2>;
   const three = <h3 className="big-heading">Senior Software Developer</h3>;
   const four = (
     <>
       <p>
-        I specialize in embedded systems, with expertise in C/C++ and a strong focus on AI integration and software architecture.
+        I specialize in embedded systems with expertise in C/C++,
+        now focusing on AI integration and software architecture.
       </p>
     </>
   );
