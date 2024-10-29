@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
-import PropTypes from 'prop-types';
-import anime from 'animejs';
-import styled from 'styled-components';
-import { IconLoader } from '@components/icons';
+import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+import PropTypes from "prop-types";
+import anime from "animejs";
+import styled from "styled-components";
+import { IconLoader } from "@components/icons";
 
 const StyledLoader = styled.div`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -21,7 +21,7 @@ const StyledLoader = styled.div`
     width: max-content;
     max-width: 100px;
     transition: var(--transition);
-    opacity: ${props => (props.isMounted ? 1 : 0)};
+    opacity: ${(props) => (props.isMounted ? 1 : 0)};
     svg {
       display: block;
       width: 100%;
@@ -29,7 +29,7 @@ const StyledLoader = styled.div`
       margin: 0 auto;
       fill: none;
       user-select: none;
-      #B {
+      #symbol {
         opacity: 0;
       }
     }
@@ -46,30 +46,30 @@ const Loader = ({ finishLoading }) => {
 
     loader
       .add({
-        targets: '#logo path',
+        targets: "#logo path",
         delay: 300,
         duration: 1500,
-        easing: 'easeInOutQuart',
+        easing: "easeInOutQuart",
         strokeDashoffset: [anime.setDashoffset, 0],
       })
       .add({
-        targets: '#logo #B',
+        targets: "#logo #symbol",
         duration: 700,
-        easing: 'easeInOutQuart',
+        easing: "easeInOutQuart",
         opacity: 1,
       })
       .add({
-        targets: '#logo',
+        targets: "#logo",
         delay: 500,
         duration: 300,
-        easing: 'easeInOutQuart',
+        easing: "easeInOutQuart",
         opacity: 0,
         scale: 0.1,
       })
       .add({
-        targets: '.loader',
+        targets: ".loader",
         duration: 200,
-        easing: 'easeInOutQuart',
+        easing: "easeInOutQuart",
         opacity: 0,
         zIndex: -1,
       });
