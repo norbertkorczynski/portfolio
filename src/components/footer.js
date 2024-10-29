@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { Icon } from '@components/icons';
-import { socialMedia } from '@config';
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { Icon } from "@components/icons";
+import { socialMedia } from "@config";
 
 const StyledFooter = styled.footer`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -74,19 +74,19 @@ const Footer = () => {
   });
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV !== "production") {
       return;
     }
-    fetch('https://api.github.com/repos/bchiang7/v4')
-      .then(response => response.json())
-      .then(json => {
+    fetch("https://api.github.com/repos/bchiang7/v4")
+      .then((response) => response.json())
+      .then((json) => {
         const { stargazers_count, forks_count } = json;
         setGitHubInfo({
           stars: stargazers_count,
           forks: forks_count,
         });
       })
-      .catch(e => console.error(e));
+      .catch((e) => console.error(e));
   }, []);
 
   return (
@@ -104,9 +104,14 @@ const Footer = () => {
         </ul>
       </StyledSocialLinks>
 
+      <StyledCredit tabindex="-2">
+        <a href="https://www.linkedin.com/in/norbert-korczynski-7164305a/">
+          <div>Developed &amp; Built by Norbert Korczynski</div>
+        </a>
+      </StyledCredit>
       <StyledCredit tabindex="-1">
         <a href="https://github.com/bchiang7/v4">
-          <div>Designed &amp; Built by Brittany Chiang</div>
+          <div>Designed by Brittany Chiang</div>
 
           {githubInfo.stars && githubInfo.forks && (
             <div className="github-stats">
