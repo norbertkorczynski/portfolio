@@ -15,6 +15,16 @@ import {
   IconPlayStore,
   IconStar,
   IconTwitter,
+  IconC,
+  IconCMake,
+  IconCpp,
+  IconDocker,
+  IconGit,
+  IconLangchain,
+  IconMatlab,
+  IconPython,
+  IconRhapsody,
+  IconSvn,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
@@ -47,6 +57,26 @@ const Icon = ({ name }) => {
       return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
+    case 'C':
+      return <IconC />;
+    case 'CMake':
+      return <IconCMake /> ;
+    case 'Cpp':
+      return <IconCpp />;
+    case 'Docker':
+      return <IconDocker />;
+    case 'Git':
+      return <IconGit />;
+    case 'Langchain':
+      return <IconLangchain />;
+    case 'Matlab':
+      return <IconMatlab />;
+    case 'Python':
+      return <IconPython />;
+    case 'Rhapsody':
+      return <IconRhapsody />;
+    case 'Svn':
+      return <IconSvn />;
     default:
       return <IconExternal />;
   }

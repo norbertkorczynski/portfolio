@@ -10,10 +10,10 @@ LABEL maintainer="nkorczynski@gmail.com"
 WORKDIR /app
 
 # Copy package.json and yarn.lock
-COPY package.json yarn.lock ./
+COPY package.json ./
 
 # Install dependencies using Yarn
-RUN yarn install --frozen-lockfile
+RUN yarn install
 
 ###################################################################################
 # Stage 2: Build the application

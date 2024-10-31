@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import styled, { ThemeProvider } from 'styled-components';
-import { Head, Loader, Nav, Social, Email, Footer } from '@components';
-import { GlobalStyle, theme } from '@styles';
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import styled, { ThemeProvider } from "styled-components";
+import { Head, Loader, Nav, Social, Email, Footer } from "@components";
+import { GlobalStyle, theme } from "@styles";
 
 const StyledContent = styled.div`
   display: flex;
@@ -11,17 +11,17 @@ const StyledContent = styled.div`
 `;
 
 const Layout = ({ children, location }) => {
-  const isHome = location.pathname === '/';
+  const isHome = location.pathname === "/";
   const [isLoading, setIsLoading] = useState(isHome);
 
   // Sets target="_blank" rel="noopener noreferrer" on external links
   const handleExternalLinks = () => {
-    const allLinks = Array.from(document.querySelectorAll('a'));
+    const allLinks = Array.from(document.querySelectorAll("a"));
     if (allLinks.length > 0) {
-      allLinks.forEach(link => {
+      allLinks.forEach((link) => {
         if (link.host !== window.location.host) {
-          link.setAttribute('rel', 'noopener noreferrer');
-          link.setAttribute('target', '_blank');
+          link.setAttribute("rel", "noopener noreferrer");
+          link.setAttribute("target", "_blank");
         }
       });
     }
