@@ -26,6 +26,10 @@ module.exports = {
       name: "Linkedin",
       url: "https://www.linkedin.com/in/norbert-korczynski-7164305a/",
     },
+    {
+      name: "Xing",
+      url: "https://www.xing.com/profile/Norbert_Korczynski/web_profiles",
+    },
   ],
 
   navLinks: [
@@ -33,18 +37,18 @@ module.exports = {
       name: "About",
       url: "/#about",
     },
-    /* {
+     {
       name: "Experience",
       url: "/#jobs",
     },
-    {
+    /*{
       name: "Work",
       url: "/#projects",
-    },
+    },*/
     {
       name: "Contact",
       url: "/#contact",
-    }, */
+    },
   ],
 
   colors: {

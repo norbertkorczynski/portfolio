@@ -9,15 +9,18 @@ import {
   IconFork,
   IconGitHub,
   IconInstagram,
+  IconEmail,
   IconLinkedin,
   IconLoader,
   IconLogo,
   IconPlayStore,
   IconStar,
   IconTwitter,
+  IconXing,
   IconC,
   IconCMake,
   IconCpp,
+  IconChroma,
   IconDocker,
   IconGit,
   IconLangchain,
@@ -45,6 +48,8 @@ const Icon = ({ name }) => {
       return <IconGitHub />;
     case 'Instagram':
       return <IconInstagram />;
+    case 'Email':
+      return <IconEmail />;
     case 'Linkedin':
       return <IconLinkedin />;
     case 'Loader':
@@ -57,12 +62,16 @@ const Icon = ({ name }) => {
       return <IconStar />;
     case 'Twitter':
       return <IconTwitter />;
+    case 'Xing':
+      return <IconXing />;
     case 'C':
       return <IconC />;
     case 'CMake':
       return <IconCMake /> ;
     case 'Cpp':
       return <IconCpp />;
+    case 'ChromaDB':
+      return <IconChroma />;
     case 'Docker':
       return <IconDocker />;
     case 'Git':

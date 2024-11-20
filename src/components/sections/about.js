@@ -134,11 +134,14 @@ const About = () => {
     "TargetLink",
     "CANoe",
     "Autosar Classic",
-    "Docker",
-    "Python",
-    "Langchain",
-    "Git",
     "Rhapsody",
+    "Docker",
+    "Podman",
+    "Git",
+    "Langchain",
+    "ChromaDB",
+    "Streamlit",
+    "FastAPI"
   ];
 
   return (
@@ -173,9 +176,8 @@ const About = () => {
             </p>
             <p>
               My recent work includes the development of a cutting-edge
-              Generative AI LLM Assistant, leveraging microservice architecture,
-              and advancing Battery Management Systems (BMS) for electromobility
-              solutions. Currently, my focus is on crafting optimized, scalable
+              Generative AI LLM Assistant, leveraging microservice architecture.
+              Currently, my focus is on crafting optimized, scalable
               software solutions using modern C++ and Python, while driving
               innovation in AI and containerized environments to deliver secure,
               efficient digital systems.

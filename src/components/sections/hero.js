@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { StaticImage } from "gatsby-plugin-image";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
@@ -6,15 +7,36 @@ import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   min-height: 100vh;
   height: 100vh;
   padding: 0;
 
   @media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
+    flex-direction: column;
     height: auto;
     padding-top: var(--nav-height);
+  }
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   h1 {
@@ -25,7 +47,7 @@ const StyledHeroSection = styled.section`
     font-weight: 400;
 
     @media (max-width: 480px) {
-      margin: 0 0 20px 2px;
+      margin: 120px 0 20px 2px;
     }
   }
 
@@ -45,6 +67,7 @@ const StyledHeroSection = styled.section`
     margin-top: 50px;
   }
 `;
+
 
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
@@ -66,33 +89,63 @@ const Hero = () => {
     <>
       <p>
         I specialize in embedded systems with expertise in C/C++,
-        now focusing on AI integration and software architecture.
+        now focusing on AI integration hosted locally and in a cloud.
       </p>
     </>
   );
+  const five = (
+    <a
+      className="email-link"
+      href="#contact">
+      Get In Touch
+    </a>
+  );
 
-  const items = [one, two, three, four];
+  const six = (
+    <StaticImage
+      className="img"
+      src="../../images/snowboard.png"
+      width={500}
+      formats={["AUTO", "WEBP", "AVIF"]}
+      alt="Background"
+    />
+  );
+
+  const items = [one, two, three, four, five, six];
 
   return (
     <StyledHeroSection>
-      {prefersReducedMotion ? (
-        <>
-          {items.map((item, i) => (
-            <div key={i}>{item}</div>
-          ))}
-        </>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
+      <div className="content">
+        {prefersReducedMotion ? (
+          <>
+            {items.slice(0, 5).map((item, i) => (
+              <div key={i}>{item}</div>
             ))}
-        </TransitionGroup>
-      )}
+          </>
+        ) : (
+          <TransitionGroup component={null}>
+            {isMounted &&
+              items.slice(0, 5).map((item, i) => (
+                <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
+                  <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
+                </CSSTransition>
+              ))}
+          </TransitionGroup>
+        )}
+      </div>
+      <div className="image">
+        {prefersReducedMotion ? (
+          items[5]
+        ) : (
+          isMounted && (
+            <CSSTransition classNames="fadeup" timeout={loaderDelay}>
+              <div style={{ transitionDelay: `600ms` }}>{items[5]}</div>
+            </CSSTransition>
+          )
+        )}
+      </div>
     </StyledHeroSection>
-  );
+  );  
 };
 
 export default Hero;

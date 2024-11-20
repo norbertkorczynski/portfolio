@@ -13,10 +13,10 @@ const IndexPage = ({ location }) => (
       <Hero />
       <SkillsGrid />
       <About />
-      {/* <Jobs />
-      <Featured />
-      <Projects />
-      <Contact /> */}
+      <Jobs /
+      /*<Featured />
+      <Projects /> */>
+      <Contact />
     </StyledMainContainer>
   </Layout>
 );
