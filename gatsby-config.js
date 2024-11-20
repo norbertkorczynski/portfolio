@@ -4,9 +4,9 @@ module.exports = {
   siteMetadata: {
     title: "Norbert Korczynski",
     description:
-      "Norbert Korczyński is a dedicated Senior Software Developer specializing in embedded systems, with expertise in C/C++ and a strong focus on AI integration and software architecture.",
-    siteUrl: "https://nkorczynski.eu", // No trailing slash allowed!
-    image: "/og.png", // Path to your image you placed in the 'static' folder
+      "Norbert Korczyński is a dedicated Senior Software Developer specializing in embedded systems, with expertise in C/C++ and a strong focus on AI integration hosted locally and in a cloud.",
+    siteUrl: "https://nkorczynski.eu",
+    image: "/og.png",
   },
   plugins: [
     `gatsby-plugin-styled-components`,
