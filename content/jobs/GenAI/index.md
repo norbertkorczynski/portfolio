@@ -1,6 +1,6 @@
 ---
 date: '2024-06-01'
-header: 'GenAI @ GlobalLogic'
+header: 'GenAI'
 title: 'Generative AI LLM Assistant'
 company: 'GlobalLogic GmbH'
 location: 'Berlin, Germany'

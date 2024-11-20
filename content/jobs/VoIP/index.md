@@ -1,6 +1,6 @@
 ---
 date: '2011-09-01'
-header: 'VoiP @ Tieto' 
+header: 'VoiP' 
 title: 'Voice over Internet Protocol'
 company: 'Tieto Poland'
 location: 'Szczecin, Poland'

@@ -1,6 +1,6 @@
 ---
 date: '2014-02-01'
-header: 'BTS RF @ Tieto' 
+header: 'BTS RF' 
 title: 'BTS Radio Frequency Software'
 company: 'Tieto Poland'
 location: 'Szczecin, Poland'

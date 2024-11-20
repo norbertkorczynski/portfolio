@@ -1,6 +1,6 @@
 ---
 date: '2020-07-01'
-header: 'BMS @ GlobalLogic'
+header: 'BMS'
 title: 'Battery Management System (BMS) HV'
 company: 'GlobalLogic GmbH'
 location: 'Berlin, Germany'

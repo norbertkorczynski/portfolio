@@ -1,6 +1,6 @@
 ---
 date: '2014-12-01'
-header: 'Infotainment @ Tieto' 
+header: 'Infotainment' 
 title: 'Automotive Infotainment System'
 company: 'Tieto Poland'
 location: 'Szczecin, Poland'

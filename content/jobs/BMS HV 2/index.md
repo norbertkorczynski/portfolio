@@ -1,6 +1,6 @@
 ---
 date: '2023-03-01'
-header: 'BMS @ GlobalLogic'
+header: 'BMS'
 title: 'Electromobility: BMS HV'
 company: 'GlobalLogic GmbH'
 location: 'Berlin, Germany'

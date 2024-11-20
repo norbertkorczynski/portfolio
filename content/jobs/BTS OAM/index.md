@@ -1,6 +1,6 @@
 ---
 date: '2013-02-01'
-header: 'BTS OAM @ Tieto' 
+header: 'BTS OAM' 
 title: 'BTS WCDMA OAM'
 company: 'Tieto Poland'
 location: 'Szczecin, Poland'

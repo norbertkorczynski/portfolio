@@ -1,6 +1,6 @@
 ---
 date: '2015-10-01'
-header: 'Touchscreen @ Meelogic'
+header: 'Touchscreen'
 title: 'Touchscreen Panel Development'
 company: 'Meelogic AG'
 location: 'Berlin, Germany'

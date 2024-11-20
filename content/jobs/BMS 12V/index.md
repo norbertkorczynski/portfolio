@@ -1,6 +1,6 @@
 ---
 date: '2022-09-01'
-header: 'Req Eng @ GlobalLogic'
+header: 'Req Eng'
 title: 'Electromobility: BMS 12V'
 company: 'GlobalLogic GmbH'
 location: 'Berlin, Germany'
