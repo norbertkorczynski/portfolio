@@ -18,6 +18,7 @@ import {
   IconC,
   IconCMake,
   IconCpp,
+  IconChroma,
   IconDocker,
   IconGit,
   IconLangchain,
@@ -63,6 +64,8 @@ const Icon = ({ name }) => {
       return <IconCMake /> ;
     case 'Cpp':
       return <IconCpp />;
+    case 'ChromaDB':
+      return <IconChroma />;
     case 'Docker':
       return <IconDocker />;
     case 'Git':

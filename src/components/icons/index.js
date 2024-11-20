@@ -18,6 +18,7 @@ export { default as IconTwitter } from "./twitter";
 export { default as IconC } from "./c";
 export { default as IconCMake } from "./cmake";
 export { default as IconCpp } from "./cpp";
+export { default as IconChroma } from "./chroma";
 export { default as IconDocker } from "./docker";
 export { default as IconGit } from "./git";
 export { default as IconLangchain } from "./langchain";

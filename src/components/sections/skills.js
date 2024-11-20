@@ -76,9 +76,9 @@ const SkillsGrid = () => {
       { name: "Docker", label: "Docker" },
       { name: "Python", label: "Python" },
       { name: "Langchain", label: "Langchain" },
+      { name: "ChromaDB", label: "Chroma DB" },
       { name: "Git", label: "Git" },
       { name: "CMake", label: "CMake" },
-      { name: "Svn", label: "SVN" },
     ],
     [],
   );

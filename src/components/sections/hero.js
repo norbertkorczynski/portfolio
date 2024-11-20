@@ -66,7 +66,7 @@ const Hero = () => {
     <>
       <p>
         I specialize in embedded systems with expertise in C/C++,
-        now focusing on AI integration and software architecture.
+        now focusing on AI integration hosted locally and in a cloud.
       </p>
     </>
   );
