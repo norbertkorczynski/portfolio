@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { StaticImage } from "gatsby-plugin-image";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
@@ -25,7 +26,7 @@ const StyledHeroSection = styled.section`
     font-weight: 400;
 
     @media (max-width: 480px) {
-      margin: 0 0 20px 2px;
+      margin: 120px 0 20px 2px;
     }
   }
 
@@ -70,8 +71,25 @@ const Hero = () => {
       </p>
     </>
   );
+  const five = (
+    <a
+      className="email-link"
+      href="#contact">
+      Get In Touch
+    </a>
+  );
 
-  const items = [one, two, three, four];
+  const six = (
+    <StaticImage
+      className="img"
+      src="../../images/snowboard.png"
+      width={500}
+      formats={["AUTO", "WEBP", "AVIF"]}
+      alt="Background"
+    />
+  );
+
+  const items = [one, two, three, four, five, six];
 
   return (
     <StyledHeroSection>
