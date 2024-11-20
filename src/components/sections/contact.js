@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import styled from 'styled-components';
-import { srConfig, email } from '@config';
+import { srConfig, email, socialMedia } from '@config'; // Ensure the LinkedIn URL is in your config file
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { Icon } from '@components/icons';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -35,9 +36,28 @@ const StyledContactSection = styled.section`
     font-size: clamp(40px, 5vw, 60px);
   }
 
-  .email-link {
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .link-button,
+  .link-button {
     ${({ theme }) => theme.mixins.bigButton};
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .link-button svg,
+  .link-button svg {
+    width: 18px;
+    height: 18px;
   }
 `;
 
@@ -60,13 +80,21 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-        Although I’m not currently looking for any new opportunities, my inbox is always open.
-        Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+        Whether you have a question or just want to say hi, my inbox is always open.
+        I’ll try my best to get back to you!
       </p>
 
-      <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
-      </a>
+      <div className="button-container">
+        <a className="link-button" href={`mailto:${email}`}>
+         <Icon name="Email" />
+        </a>
+        <a className="link-button" href={socialMedia[1].url} target="_blank" rel="noopener noreferrer">
+         <Icon name="Linkedin" />
+        </a>
+        <a className="link-button" href={socialMedia[2].url} target="_blank" rel="noopener noreferrer">
+         <Icon name="Xing" />
+        </a>
+      </div>
     </StyledContactSection>
   );
 };
