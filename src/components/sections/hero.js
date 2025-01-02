@@ -111,7 +111,7 @@ const Hero = () => {
     />
   );
 
-  const items = [one, two, three, four, five, six];
+  const items = [one, two, three, four, five];
 
   return (
     <StyledHeroSection>
@@ -133,7 +133,7 @@ const Hero = () => {
           </TransitionGroup>
         )}
       </div>
-      <div className="image">
+      {/* <div className="image">
         {prefersReducedMotion ? (
           items[5]
         ) : (
@@ -143,7 +143,7 @@ const Hero = () => {
             </CSSTransition>
           )
         )}
-      </div>
+      </div> */}
     </StyledHeroSection>
   );  
 };
