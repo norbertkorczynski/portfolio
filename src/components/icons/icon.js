@@ -28,6 +28,7 @@ import {
   IconPython,
   IconRhapsody,
   IconSvn,
+  IconCertificate,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
@@ -86,6 +87,8 @@ const Icon = ({ name }) => {
       return <IconRhapsody />;
     case 'Svn':
       return <IconSvn />;
+    case 'Certificate':
+      return <IconCertificate />;
     default:
       return <IconExternal />;
   }
