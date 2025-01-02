@@ -1,5 +1,45 @@
 It was originally designed by Brittany Chiang and can be found [here](https://github.com/bchiang7/v4).
 
+## 📦 Development & Production Using Docker
+
+### Prerequisites
+1. Docker Engine installed (or an equivalent containerization platform, e.g., Podman).
+2. _(Optional: Easier setup)_ Docker Compose configured (or an equivalent tool for the installed platform, e.g., Podman Compose).
+
+### Development Container
+
+The development container allows you to modify files on your machine using your preferred editor while running a fully functional development environment. All dependencies are installed automatically with a single command.
+
+**Use Docker Compose**
+
+Run the following command to start the `dev` container:
+
+```sh
+docker-compose up -d dev
+```
+**What This Does:**
+- Builds the `portfolio:dev` image using the `development` target from the Dockerfile.
+- Mounts the current directory (`.`) to `/app` inside the container, enabling real-time synchronization of changes.
+- Exposes port `8090` on your local machine and maps it to port `8000` in the container.
+- Starts the container named `portfolio_dev` in the background.
+
+
+### Production Container
+
+The web container runs the production version of your application. It provides a lightweight environment optimized for serving your website to end users.
+
+**Use Docker Compose**
+
+Run the following command to start the `web` container in detached mode:
+
+```sh
+docker-compose run -p 8080:80 web
+```
+**What This Does:**
+- Builds the `portfolio:prod` image using the production target from the Dockerfile.
+- Maps port `8080` (this can be adjusted) on your local machine to port `80` in the container.
+- Starts the container named `portfolio_web` in the background.
+
 ## 🛠 Installation & Set Up
 
 1. Install the Gatsby CLI
