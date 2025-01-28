@@ -141,7 +141,8 @@ const About = () => {
     "Langchain",
     "ChromaDB",
     "Streamlit",
-    "FastAPI"
+    "FastAPI",
+    "Azure"
   ];
 
   return (

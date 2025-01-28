@@ -29,6 +29,7 @@ import {
   IconRhapsody,
   IconSvn,
   IconCertificate,
+  IconAzure,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
@@ -89,6 +90,8 @@ const Icon = ({ name }) => {
       return <IconSvn />;
     case 'Certificate':
       return <IconCertificate />;
+    case 'Azure':
+      return <IconAzure />;
     default:
       return <IconExternal />;
   }

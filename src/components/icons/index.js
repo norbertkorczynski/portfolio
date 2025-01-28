@@ -17,6 +17,7 @@ export { default as IconStar } from "./star";
 export { default as IconTwitter } from "./twitter";
 export { default as IconXing } from "./xing";
 export { default as IconCertificate } from "./certificate";
+export { default as IconAzure } from "./azure";
 
 export { default as IconC } from "./c";
 export { default as IconCMake } from "./cmake";

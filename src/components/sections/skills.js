@@ -78,7 +78,7 @@ const SkillsGrid = () => {
       { name: "Langchain", label: "Langchain" },
       { name: "ChromaDB", label: "Chroma DB" },
       { name: "Git", label: "Git" },
-      { name: "CMake", label: "CMake" },
+      { name: "Azure", label: "Azure" },
     ],
     [],
   );
