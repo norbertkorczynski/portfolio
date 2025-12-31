@@ -4,7 +4,7 @@ header: 'GenAI'
 title: 'Generative AI LLM Assistant'
 company: 'GlobalLogic GmbH'
 location: 'Berlin, Germany'
-range: 'June 2024 - Present'
+range: 'June 2024 - January 2025'
 url: 'https://www.globallogic.com/'
 ---
 **AI Software Developer**
