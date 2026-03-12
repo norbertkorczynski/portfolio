@@ -1,3 +1,9 @@
 .cache/
 node_modules/
 public/
+.git
+dist/
+.DS_Store
+.env
+.env.local
+.cache/

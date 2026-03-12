@@ -11,9 +11,10 @@ WORKDIR /app
 
 # Copy package.json and yarn.lock
 COPY package.json ./
+COPY yarn.lock ./
 
-# Install dependencies using Yarn
-RUN yarn install
+# Install dependencies using Yarn (deterministic)
+RUN yarn install --frozen-lockfile
 
 ###################################################################################
 # Stage 2: Build the application
@@ -58,5 +59,4 @@ ENV PUBLIC_PATH=/usr/share/nginx/html
 # Copy the build output from the builder stage to the path specified in PUBLIC_PATH
 COPY --from=builder /app/public "${PUBLIC_PATH}"
 
-# Set up volume for static files
-VOLUME ["${PUBLIC_PATH}"]
+# Note: no volume for PUBLIC_PATH to keep the production image immutable
