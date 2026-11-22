@@ -51,7 +51,7 @@ CMD ["yarn", "develop"]
 ###################################################################################
 # Stage 4: Production environment
 ###################################################################################
-FROM docker.io/library/nginx:1.27.2-alpine3.20-slim AS production
+FROM docker.io/library/nginx:1.30.7-alpine3.24-slim AS production
 
 # Set the path to the public directory where static files will be served from
 ENV PUBLIC_PATH=/usr/share/nginx/html
